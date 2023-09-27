@@ -1,10 +1,11 @@
 function Spa() {
   return (
-    <HashRouter>
-      <NavBar/>
+    {/*<HashRouter>*/}
+    <div className="container" style={{padding: "20px"}}>
+      <NavBar>
       {/*<UserContext.Provider value={{users:[{name:'camilo',email:'ca.rincon97@gmail.com',password:'secret',balance:100}]}}>*/}
         
-        <div className="container" style={{padding: "20px"}}>
+        
           <Route path="/" exact component={Home} />
           <Route path="/CreateAccount/" component={CreateAccount} />
           <Route path="/login/" component={Login} />
@@ -12,10 +13,12 @@ function Spa() {
           <Route path="/withdraw/" component={Withdraw} />
           <Route path="/balance/" component={Balance} />
           <Route path="/alldata/" component={AllData} />
-        </div>                    
+             
+        </NavBar>  
+      </div>             
        {/*</UserContext.Provider> */} 
         
-    </HashRouter>
+    {/*</HashRouter>*/}
       );
 }
 
