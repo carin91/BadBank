@@ -1,6 +1,6 @@
 function Spa() {
   return (
-    <HashRouter>*
+    <HashRouter>
       <NavBar/>
       {/*<UserContext.Provider value={{users:[{name:'camilo',email:'ca.rincon97@gmail.com',password:'secret',balance:100}]}}>*/}
         
@@ -15,8 +15,8 @@ function Spa() {
         </div>                    
        {/*</UserContext.Provider> */} 
         
-    </HashRouter>*
-  );
+    </HashRouter>
+      );
 }
 
 ReactDOM.render(
